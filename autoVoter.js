@@ -73,7 +73,7 @@ class AutoVoter {
         console.log("tid:", tid);
         let pollAnswers = this.getPollAnswers(parsedHtml);
         console.log("pollAnswers:", pollAnswers);
-        const pollAnswer = pollAnswers[pollAnswers.length - 1];
+        const pollAnswer = pollAnswers[pollAnswers.length - 1];  // 默认选择最后一项进行投票
         if (!formhash || !fid || !tid || !pollAnswer) {
             console.log("无法获取必要的投票信息");
             return;
